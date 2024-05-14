@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = BASE_DIR / 'templates'
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-%9u=$2j)b72mw+_g+*u(gk&6zl7g(bly93-ccd^8ca*068e#c(')
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-z!xjl%o*wexvxgwg+urcbka7pcgvp#hw=!02+04eg^10ul3_dg')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
@@ -22,7 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'uniapp',
+    'app',
 ]
 
 MIDDLEWARE = [

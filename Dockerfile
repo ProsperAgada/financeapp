@@ -1,4 +1,5 @@
-FROM python:3.13.0a5-slim-bullseye
+FROM python:3.12.3-slim
+
 WORKDIR /app
 
 COPY ./requirements.txt /app
@@ -9,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD [ "python","run.py", "runserver", "0.0.0.0:8000" ]  
+CMD [ "python","manage.py", "runserver", "0.0.0.0:8000" ]  
